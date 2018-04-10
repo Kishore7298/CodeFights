@@ -15,22 +15,13 @@ int firstDuplicate(vector<int> a) {
 
       if(count[a[i]]>1)
       {  t++;
-          cout<<a[i];
+          return a[i];
           break;
       }
 
 
     }
     if(t==0)
-        cout<<"-1";
+        return -1;
 }
-int main()
-{
-    vector <int> b;
-    b.push_back(2);
-    b.push_back(4);
-    b.push_back(3);
-    b.push_back(5);
-    b.push_back(1);
-    firstDuplicate(b);
-}
+
