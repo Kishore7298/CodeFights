@@ -1,6 +1,4 @@
-#include <bits/stdc++.h>
 
-using namespace std;
 int firstDuplicate(vector<int> a) {
 
     int n=a.size();
