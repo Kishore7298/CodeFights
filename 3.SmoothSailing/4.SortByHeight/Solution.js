@@ -1,28 +1,37 @@
 function sortByHeight(arr) {
-var i=0, j=1;
-   var n=arr.length;
-   var temp;
-   while(i<n-1)
-      while(j<n-1)
-         {
-            if(arr[i]==-1)
-               {i++;
-                j++;
-               break;}
-            else if(arr[j]==-1)
-               {
-                  j++;
-               }
-            if(arr[i]>arr[j])
-               {
-                  temp=arr[i];
-                  arr[i]=arr[j];
-                  arr[j]=temp;
-                  i++;
-                  j++;
-               }
-       
-         }
-   
-    return arr;
+    let i=0;
+    let y=[];
+    let j=0;
+    for(i=0;i<arr.length;i++)
+        {
+            if(arr[i]!= -1)
+                {
+                    y[j]=arr[i];
+                    j++
+                    
+                }  
+            
+        }
+    for(i=0;i<arr.length;i++)
+        {
+           if(arr[i]!= -1)
+                {
+                  arr[i]='X';   
+                }   
+            
+        }
+    var x = y.sort(function(a, b){return a - b});
+     j=0;
+    for(i=0;i<arr.length;i++)
+        {
+             if(arr[i]== 'X')
+                 {
+                 arr[i] = x[j];
+                 j++;
+                 }
+            
+        }
+
+  
+ return arr; 
 }
