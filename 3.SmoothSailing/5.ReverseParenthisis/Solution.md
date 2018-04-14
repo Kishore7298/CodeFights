@@ -24,7 +24,8 @@ Input/Output
 Code:
 
 
-```function reverseParentheses(s) {
+```javascript
+function reverseParentheses(s) {
  if (s.includes('(')){
         return reverseParentheses(reverseOnce(s));
     } else {     
