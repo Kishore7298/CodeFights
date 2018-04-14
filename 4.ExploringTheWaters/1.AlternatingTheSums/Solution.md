@@ -20,7 +20,7 @@ Input/Output
     [output] array.integer
 
 Code:
-```
+```Javascript
 function alternatingSums(a) {
     var result = [];
     var team1 =[];
