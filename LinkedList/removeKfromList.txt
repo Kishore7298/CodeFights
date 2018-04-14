@@ -1,0 +1,82 @@
+Please Note that the C++ solution failts last test case when the input is extremely huge but java soln is perfect
+// Definition for singly-linked list:
+// template<typename T>
+// struct ListNode {
+//   ListNode(const T &v) : value(v), next(nullptr) {}
+//   T value;
+//   ListNode *next;
+// };
+//
+ListNode<int> * removeKFromList(ListNode<int> * l, int k) {
+ struct ListNode<int> *new_node= l;
+ struct ListNode<int> *prev;
+ struct ListNode<int> *front;
+ struct ListNode<int> *cur;
+
+ while(new_node!=NULL)
+  {  prev=new_node;
+    
+    
+     if(new_node->next!=NULL)
+     {cur=new_node->next;
+   
+     }
+   else{
+  
+    cur=new_node;
+     }
+     
+     if(prev->value ==k){
+     
+      l=l->next;
+      free(prev);
+     
+     }
+   else  if(cur->value == k)
+    {
+    
+        new_node->next=cur->next;
+ free(cur);
+      
+    
+    }
+ 
+   new_node=new_node->next;
+   }
+
+return l;
+ 
+}
+______________________________________________
+// Definition for singly-linked list:
+// class ListNode<T> {
+//   ListNode(T x) {
+//     value = x;
+//   }
+//   T value;
+//   ListNode<T> next;
+// }
+//
+ListNode<Integer> removeKFromList(ListNode<Integer> l, int k) {
+ ListNode list = new ListNode(0);
+
+	     ListNode temp=list;
+
+	     while(l!=null){
+
+	            if(l.value!=k){
+
+	                temp.next = l;
+
+	                temp= temp.next;
+
+	            } 
+
+	            l = l.next;
+
+	     }
+
+	     temp.next=null;
+
+	     return list.next;
+}
