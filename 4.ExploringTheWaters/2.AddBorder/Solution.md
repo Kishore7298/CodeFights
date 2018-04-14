@@ -31,7 +31,7 @@ Input/Output
     The same matrix of characters, framed with a border of asterisks of width 1.
 
 Code:
-```
+```javascript
 function addBorder(picture) {
  var arr = [];
  var result=[];
