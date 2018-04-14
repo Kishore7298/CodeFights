@@ -1,4 +1,4 @@
-Please Note that the C++ solution failts last test case when the input is extremely huge but java soln is perfect
+Please Note that the C++ solution fails last test case when the input is extremely huge but java soln is perfect
 // Definition for singly-linked list:
 // template<typename T>
 // struct ListNode {
