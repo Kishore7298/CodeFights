@@ -1,6 +1,5 @@
 
 int firstDuplicate(vector<int> a) {
-
     int n=a.size();
 
     int count[1000];
