@@ -1,5 +1,5 @@
 # CodeFights
-Programming Challenges from CodeFights.com
+<h5>Programming Challenges from CodeFights.com</h5>
 
 We are currently solving Questions from "Arcade" and "Interview Preparation"
 
